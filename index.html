@@ -11,7 +11,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600;700;800&family=Nunito Sans:ital,wght@0,400;0,600;0,700;0,800;0,900;1,400&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600;700;800&family=Nunito+Sans:ital,wght@0,400;0,600;0,700;0,800;0,900;1,400&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
@@ -33,7 +33,9 @@
         <span><b>Hamsa<br />Blossoms</b><small>PLAY SCHOOL</small></span>
       </a>
       <button class="menu" aria-label="Toggle navigation menu" aria-expanded="false">
-        ☰
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
       </button>
       <nav>
         <a class="active" href="#home">Home</a>
@@ -48,7 +50,7 @@
     </header>
 
     <main>
-      <!-- Premium Redesigned Hero Section -->
+      <!-- Premium Redesigned Hero Section (Mobile Fluid & Aligned) -->
       <section class="hero" id="home">
         <div class="hero-backdrop" aria-hidden="true">
           <div class="glow glow-1"></div>
@@ -79,7 +81,7 @@
             </div>
           </div>
 
-          <div class="hero-art-container reveal">
+          <div class="hero-art-container reveal delay-1">
             <div class="hero-art-backdrop"></div>
             <div class="hero-art">
               <img
@@ -109,28 +111,28 @@
 
       <!-- Counter Stats Section -->
       <section class="stats shell">
-        <article>
+        <article class="reveal">
           <i>♟</i>
           <div>
             <b data-count="600">0</b>
             <span>Happy Students</span>
           </div>
         </article>
-        <article>
+        <article class="reveal delay-1">
           <i>☻</i>
           <div>
             <b data-count="25">0</b>
             <span>Expert Teachers</span>
           </div>
         </article>
-        <article>
+        <article class="reveal delay-2">
           <i>♕</i>
           <div>
             <b data-count="15">0</b>
             <span>Years of Excellence</span>
           </div>
         </article>
-        <article>
+        <article class="reveal delay-3">
           <i>♡</i>
           <div>
             <b data-count="100">0</b>
@@ -154,27 +156,27 @@
             <h3>Safe & Secure</h3>
             <p>Round-the-clock care, CCTV and child-safe spaces.</p>
           </article>
-          <article class="reveal">
+          <article class="reveal delay-1">
             <i>🎓</i>
             <h3>Expert Teachers</h3>
             <p>Warm, qualified educators who truly understand children.</p>
           </article>
-          <article class="reveal">
+          <article class="reveal delay-2">
             <i>🎨</i>
             <h3>Learning Through Play</h3>
             <p>Hands-on discovery that makes every day meaningful.</p>
           </article>
-          <article class="reveal">
+          <article class="reveal delay-3">
             <i>♡</i>
             <h3>Individual Care</h3>
             <p>Personal attention for every unique little personality.</p>
           </article>
-          <article class="reveal">
+          <article class="reveal delay-1">
             <i>🍎</i>
             <h3>Healthy Meals</h3>
             <p>Fresh, nourishing bites for energetic little explorers.</p>
           </article>
-          <article class="reveal">
+          <article class="reveal delay-2">
             <i>🚌</i>
             <h3>Safe Transport</h3>
             <p>GPS-enabled buses with trained, caring staff.</p>
@@ -207,7 +209,7 @@
             </div>
           </article>
 
-          <article class="program yellow reveal">
+          <article class="program yellow reveal delay-1">
             <img src="./images/child4.jpeg" alt="Children in a classroom" />
             <div>
               <span class="age">2.5 – 3.5 years</span>
@@ -222,7 +224,7 @@
             </div>
           </article>
 
-          <article class="program green reveal">
+          <article class="program green reveal delay-2">
             <img src="./images/child1.jpeg" alt="Child enjoying learning" />
             <div>
               <span class="age">3.5 – 4.5 years</span>
@@ -237,7 +239,7 @@
             </div>
           </article>
 
-          <article class="program coral reveal">
+          <article class="program coral reveal delay-3">
             <img src="./images/child6.jpeg" alt="Child writing at school" />
             <div>
               <span class="age">4.5 – 5.5 years</span>
@@ -254,7 +256,7 @@
         </div>
       </section>
 
-      <!-- Campus Facilities Section (Scrollable Showcase with Custom Scrollbar) -->
+      <!-- Campus Facilities Section (Fluid Mobile Responsiveness & Neat Scroll) -->
       <section class="section facilities" id="facilities">
         <div class="shell split">
           <!-- Left Column: Copy & Featured Image -->
@@ -266,7 +268,8 @@
             </p>
 
             <div class="scroll-hint">
-              <span>Scroll inside the list to explore all 15 facilities ↓</span>
+              <span class="hint-icon">👇</span>
+              <span>Scroll inside box below to view all 15 facilities</span>
             </div>
 
             <div class="facility-showcase-img">
@@ -277,8 +280,12 @@
             <a class="btn purple-btn" href="#contact">Schedule a Campus Visit →</a>
           </div>
 
-          <!-- Right Column: Scrollable Facilities Container holding all 15 Cards -->
-          <div class="facility-scroll-container reveal">
+          <!-- Right Column: Scrollable Facilities Container with Custom Scrollbar -->
+          <div class="facility-scroll-container reveal delay-1">
+            <div class="facility-scroll-header">
+              <span><b>15 Facilities</b> Available</span>
+              <small>Scroll list ↓</small>
+            </div>
             <div class="facility-grid">
               <article class="facility-card">
                 <div class="facility-card-icon">🧩</div>
@@ -451,11 +458,11 @@
 
       <!-- Virtual Tour Section -->
       <section class="tour shell" id="tour">
-        <div class="tour-photo">
+        <div class="tour-photo reveal">
           <img src="./images/child12.jpeg" alt="Bright school campus" />
           <button class="play" aria-label="Play virtual tour">▶</button>
         </div>
-        <div class="tour-copy">
+        <div class="tour-copy reveal delay-1">
           <p class="eyebrow">VIRTUAL TOUR</p>
           <h2>Come see where magic happens</h2>
           <p>
@@ -471,7 +478,7 @@
           <p>MEMORIES IN BLOOM</p>
           <h2>Life at <span>Hamsa Blossoms</span></h2>
         </div>
-        <div class="filters">
+        <div class="filters reveal delay-1">
           <button class="selected" data-filter="all">All moments</button>
           <button data-filter="art">Art & craft</button>
           <button data-filter="play">Play</button>
@@ -480,7 +487,7 @@
         </div>
         <div class="masonry shell">
           <button
-            class="gallery-item tall"
+            class="gallery-item tall reveal"
             data-kind="art"
             data-image="https://images.unsplash.com/photo-1560421683-6856ea585c78?auto=format&fit=crop&w=900&q=85"
           >
@@ -492,7 +499,7 @@
           </button>
 
           <button
-            class="gallery-item tall"
+            class="gallery-item tall reveal delay-1"
             data-kind="music"
             data-image="./images/music.webp"
           >
@@ -501,7 +508,7 @@
           </button>
 
           <button
-            class="gallery-item"
+            class="gallery-item reveal delay-2"
             data-kind="music"
             data-image="./images/music1.jpeg"
           >
@@ -510,7 +517,7 @@
           </button>
 
           <button
-            class="gallery-item"
+            class="gallery-item reveal delay-3"
             data-kind="art"
             data-image="./images/child10.jpeg"
           >
@@ -519,7 +526,7 @@
           </button>
 
           <button
-            class="gallery-item"
+            class="gallery-item reveal"
             data-kind="art"
             data-image="./images/child11.jpeg"
           >
@@ -528,7 +535,7 @@
           </button>
 
           <button
-            class="gallery-item"
+            class="gallery-item reveal delay-1"
             data-kind="art"
             data-image="./images/child9.jpeg"
           >
@@ -537,7 +544,7 @@
           </button>
 
           <button
-            class="gallery-item"
+            class="gallery-item reveal delay-2"
             data-kind="play"
             data-image="https://images.unsplash.com/photo-1607453998774-d533f65dac99?auto=format&fit=crop&w=800&q=85"
           >
@@ -549,7 +556,7 @@
           </button>
 
           <button
-            class="gallery-item"
+            class="gallery-item reveal delay-3"
             data-kind="music"
             data-image="https://images.unsplash.com/photo-1516627145497-ae6968895b74?auto=format&fit=crop&w=800&q=85"
           >
@@ -561,7 +568,7 @@
           </button>
 
           <button
-            class="gallery-item wide"
+            class="gallery-item wide reveal"
             data-kind="outdoor"
             data-image="https://images.unsplash.com/photo-1472162072942-cd5147eb3902?auto=format&fit=crop&w=1000&q=85"
           >
@@ -573,7 +580,7 @@
           </button>
 
           <button
-            class="gallery-item"
+            class="gallery-item reveal delay-1"
             data-kind="outdoor"
             data-image="./images/out.jpeg"
           >
@@ -582,7 +589,7 @@
           </button>
 
           <button
-            class="gallery-item"
+            class="gallery-item reveal delay-2"
             data-kind="outdoor"
             data-image="./images/out1.jpg"
           >
@@ -591,7 +598,7 @@
           </button>
 
           <button
-            class="gallery-item"
+            class="gallery-item reveal delay-3"
             data-kind="play"
             data-image="./images/child12.jpeg"
           >
@@ -600,7 +607,7 @@
           </button>
 
           <button
-            class="gallery-item"
+            class="gallery-item reveal"
             data-kind="play"
             data-image="./images/child1.jpeg"
           >
@@ -620,7 +627,7 @@
             />
             <div>15+<small>years of joyful learning</small></div>
           </div>
-          <div class="reveal">
+          <div class="reveal delay-1">
             <p class="eyebrow">OUR HEART & SOUL</p>
             <h2>Growing confident, kind humans</h2>
             <p>
@@ -640,11 +647,11 @@
 
       <!-- Testimonials Section -->
       <section class="testimonials">
-        <div class="section-title">
+        <div class="section-title reveal">
           <p>WHAT PARENTS SAY</p>
           <h2>Trusted by families, <span>loved by children</span></h2>
         </div>
-        <div class="testimonial-shell shell">
+        <div class="testimonial-shell shell reveal delay-1">
           <button class="slide-prev" aria-label="Previous testimonial">←</button>
           <article class="testimonial active">
             <div class="quote">“</div>
@@ -694,7 +701,7 @@
             </ol>
             <a href="#contact" class="btn pink">Start your application →</a>
           </div>
-          <div class="faq reveal">
+          <div class="faq reveal delay-1">
             <h3>Frequently asked questions</h3>
             <details>
               <summary>What age can my child start?</summary>
@@ -725,7 +732,7 @@
       <!-- Contact Section -->
       <section class="contact" id="contact">
         <div class="shell contact-grid">
-          <div>
+          <div class="reveal">
             <p class="eyebrow">LET'S CONNECT</p>
             <h2>We'd love to meet your family</h2>
             <p>
@@ -738,7 +745,7 @@
               <span>◷ <b>Hours</b> Mon–Fri, 8:30 AM–4:30 PM</span>
             </div>
           </div>
-          <form id="contact-form">
+          <form id="contact-form" class="reveal delay-1">
             <div>
               <label>
                 Parent's name
